@@ -27,11 +27,15 @@ const api = require("./api.js");
 // Server configuration below
 // TODO (step-1): change connection URL after setting up your own database
 const mongoConnectionURL =
-//password里面输入自己的密码,没有<>,如y_dove:12345678@......
+  //password 閲岃緭鍏ヨ嚜宸辩殑瀵嗙爜濡倅_dove:12345678@......
   "mongodb+srv://y_dove:<password>@cluster0.crxdema.mongodb.net/?retryWrites=true&w=majority";
 
 const databaseName = "Cluster0";
-const options = { useNewUrlParser: true, useUnifiedTopology: true, dbName: databaseName };
+const options = {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  dbName: databaseName,
+};
 
 // connect to mongodb
 mongoose
